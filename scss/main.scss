@@ -1,0 +1,43 @@
+$bodyBack: #B0A68E;
+$calcBack: #51504E;
+$display: #292929;
+$digit: #CCC4AD;
+body {
+    background-color: $bodyBack;
+    h1{
+        font-family: 'Indie Flower', cursive;
+        padding: 50px;
+    }
+    #calc {
+        background-color: $calcBack;
+        width: 250px;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 1px 5px 15px rgba(0, 0, 0, .5);
+        #res {
+            background-color: $display;
+            color: $digit;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 24px;
+            padding: 8px;
+            line-height: 30px;
+        }
+        button {
+            height: 40px !important;
+            width: 50px;
+            margin: 3px 2px;
+            border: none !important;
+            background-color: #607d8b;
+            &.btn-danger{
+                background-color: #ff5722;
+            }
+            &.btn-warning{
+                background-color: #ff9800;
+            }
+        }
+        #eq {
+            width: 168px;
+            background-color: #4caf50;
+        }
+    }
+}
