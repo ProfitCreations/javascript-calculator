@@ -21,7 +21,8 @@ html {
           color: #CCC4AD;
           font-family: 'Orbitron', sans-serif;
           font-size: calc(2vh + 1.5vw * 2);
-          margin: auto; }
+          margin: auto;
+          overflow: hidden; }
       html body #calc .but {
         height: 85%;
         padding: 5px; }

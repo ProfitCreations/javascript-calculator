@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var ops = ["+", "-", "/", "*", ".", "%"];
+  var ops = ["+", "-", "/", "*", "."];
   var countPunts = 0;
   var equalClicked = false;
 
@@ -28,11 +28,9 @@ $(document).ready(function() {
 
   function chekOperators(x) {
     var lastChar = $("#res").text().slice(-1);
-
     if (equalClicked === true) {
       equalClicked = false;
     }
-
     for (var i = 0; i < ops.length; i++) {
       if (ops[i] === lastChar) {
         var resText = $("#res").text().split("").splice(resLength, 1);
@@ -53,7 +51,6 @@ $(document).ready(function() {
   $("#plus").click(function() {
     chekOperators("+");
     $("#res").text($("#res").text() + "+");
-    // chekOperators();
   });
 
   $("#minus").click(function() {
