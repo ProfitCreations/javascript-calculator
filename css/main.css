@@ -1,31 +1,56 @@
-body {
-  background-color: #B0A68E; }
-  body h1 {
-    font-family: 'Indie Flower', cursive;
-    padding: 50px; }
-  body #calc {
+html {
+  height: 100%;
+  min-height: 100%; }
+  html body {
     background-color: #51504E;
-    width: 250px;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.5); }
-    body #calc #res {
-      background-color: #292929;
-      color: #CCC4AD;
-      font-family: 'Orbitron', sans-serif;
-      font-size: 24px;
-      padding: 8px;
-      line-height: 30px; }
-    body #calc button {
-      height: 40px !important;
-      width: 50px;
-      margin: 3px 2px;
-      border: none !important;
-      background-color: #607d8b; }
-      body #calc button.btn-danger {
-        background-color: #ff5722; }
-      body #calc button.btn-warning {
-        background-color: #ff9800; }
-    body #calc #eq {
-      width: 168px;
-      background-color: #4caf50; }
+    height: 100%;
+    min-height: 100%;
+    padding: calc(1vh + 1.5vw); }
+    html body #calc {
+      min-height: 290px;
+      min-width: 230px;
+      border-radius: 5px;
+      height: 100%; }
+      html body #calc h6 {
+        color: #fff; }
+      html body #calc .result {
+        background-color: #292929;
+        padding: calc(1vh + 1.5vw);
+        vertical-align: middle; }
+        html body #calc .result #res {
+          color: #CCC4AD;
+          font-family: 'Orbitron', sans-serif;
+          font-size: calc(2vh + 1.5vw * 2);
+          margin: auto; }
+      html body #calc .but {
+        height: 85%;
+        padding: 5px; }
+        html body #calc .but .btnr {
+          height: calc(100% - 82%); }
+          html body #calc .but .btnr .col-3,
+          html body #calc .but .btnr .col-8,
+          html body #calc .but .btnr .col-9 {
+            padding: 0px 5px !important;
+            height: 90%; }
+            html body #calc .but .btnr .col-3 button,
+            html body #calc .but .btnr .col-8 button,
+            html body #calc .but .btnr .col-9 button {
+              font-size: calc(2vh + 1.5vw);
+              height: 100% !important;
+              width: 100%;
+              min-height: 30px;
+              min-width: 30px;
+              border: none !important;
+              background-color: #607d8b; }
+              html body #calc .but .btnr .col-3 button.btn-danger,
+              html body #calc .but .btnr .col-8 button.btn-danger,
+              html body #calc .but .btnr .col-9 button.btn-danger {
+                background-color: #ff5722; }
+              html body #calc .but .btnr .col-3 button.btn-warning,
+              html body #calc .but .btnr .col-8 button.btn-warning,
+              html body #calc .but .btnr .col-9 button.btn-warning {
+                background-color: #ff9800; }
+            html body #calc .but .btnr .col-3 #eq,
+            html body #calc .but .btnr .col-8 #eq,
+            html body #calc .but .btnr .col-9 #eq {
+              background-color: #4caf50; }

@@ -9,54 +9,90 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.min.css">
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <div class="container text-center">
-        <h1 class="text-center">Javascript Calculator</h1>
-    </div>
-    <div class="container text-center">
-        <div id="calc" class="offset-md-4">
+
+
+
+        <div class="container-fluid text-center" id="calc">
+          <div class="row align-items-center">
+            <div class="col">
+              <h6 class="text-center">Javascript Calculator</h6>
+            </div>
+          </div>
+          <div class="result">
             <p id="res" class="text-right">0</p>
+          </div>
             <div class="but">
-                <div class="row">
-                    <div class="col-12">
+                <div class="row btnr justify-content-center align-items-center">
+                    <div class="col-3">
                         <button id="nine" class="btn btn-raised btn-info">9</button>
+                    </div>
+                    <div class="col-3">
                         <button id="eigth" class="btn btn-raised btn-info">8</button>
+                    </div>
+                    <div class="col-3">
                         <button id="seven" class="btn btn-raised btn-info">7</button>
+                    </div>
+                    <div class="col-3">
                         <button id="plus" class="btn btn-raised btn-info">+</button>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <button id="six" class="btn btn-raised btn-info">6</button>
-                        <button id="five" class="btn btn-raised btn-info">5</button>
-                        <button id="four" class="btn btn-raised btn-info">4</button>
-                        <button id="minus" class="btn btn-raised btn-info">-</button>
+                <div class="row btnr justify-content-center align-items-center">
+                    <div class="col-3">
+                      <button id="six" class="btn btn-raised btn-info">6</button>
+                    </div>
+                    <div class="col-3">
+                      <button id="five" class="btn btn-raised btn-info">5</button>
+                    </div>
+                    <div class="col-3">
+                      <button id="four" class="btn btn-raised btn-info">4</button>
+                    </div>
+                    <div class="col-3">
+                      <button id="minus" class="btn btn-raised btn-info">-</button>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <button id="three" class="btn btn-raised btn-info">3</button>
-                        <button id="two" class="btn btn-raised btn-info">2</button>
-                        <button id="one" class="btn btn-raised btn-info">1</button>
-                        <button id="divide" class="btn btn-raised btn-info">/</button>
-                    </div>
+                <div class="row btnr justify-content-center align-items-center">
+                  <div class="col-3">
+                    <button id="three" class="btn btn-raised btn-info">3</button>
+                  </div>
+                  <div class="col-3">
+                    <button id="two" class="btn btn-raised btn-info">2</button>
+                  </div>
+                  <div class="col-3">
+                    <button id="one" class="btn btn-raised btn-info">1</button>
+                  </div>
+                  <div class="col-3">
+                    <button id="divide" class="btn btn-raised btn-info">/</button>
+                  </div>
                 </div>
-                <button id="zero" class="btn btn-raised btn-info">0</button>
-                <button id="punt" class="btn btn-raised btn-info">.</button>
-                <button id="c" class="btn btn-raised btn-warning">C</button>
-                <button id="multiply" class="btn btn-raised btn-info">*</button>
-                <div class="row">
-                    <div class="col-12">
+                <div class="row btnr justify-content-center align-items-center">
+                  <div class="col-3">
+                    <button id="zero" class="btn btn-raised btn-info">0</button>
+                  </div>
+                  <div class="col-3">
+                    <button id="punt" class="btn btn-raised btn-info">.</button>
+                  </div>
+                  <div class="col-3">
+                    <button id="c" class="btn btn-raised btn-warning">C</button>
+                  </div>
+                  <div class="col-3">
+                    <button id="multiply" class="btn btn-raised btn-info">*</button>
+                  </div>
+                </div>
+
+                <div class="row btnr justify-content-center align-items-center">
+                    <div class="col-3">
                         <button id="ac" class="btn btn-raised btn-danger">AC</button>
-                        <button id="eq" class="btn btn-raised btn-success">=</button>
+                    </div>
+                    <div class="col-9">
+                      <button id="eq" class="btn btn-raised btn-success">=</button>
                     </div>
                 </div>
             </div>
-        </div>
+        <!-- </div> -->
     </div>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
